@@ -1,6 +1,8 @@
 <?php
 
 /** @var \Laravel\Lumen\Routing\Router $router */
+use App\Helpers\Search;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,10 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->get('/', function (Request $request) {
+    $latitude = $request->input('latitude');
+    $longitude = $request->input('longitude');
+    $orderBy = $request->input('order-by');
+    
+    return Search::getNearbyHotels($latitude,$longitude, $orderBy);
 });
