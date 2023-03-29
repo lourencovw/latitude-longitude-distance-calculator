@@ -10,7 +10,8 @@
 ## Option 2 - Create your own local enviroment (PHP 8.2, Composer 2.5)
 
 ### 2.1 - Run these commands
-    
+
+    > composer install;    
     > php artisan migrate;
     > php artisan db:seed --class=HotelSeeder;
     > php -S localhost:8000 -t public;
