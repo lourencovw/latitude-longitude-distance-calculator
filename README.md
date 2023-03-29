@@ -17,3 +17,9 @@
     > php artisan migrate;
     > php artisan db:seed --class=HotelSeeder;
     > php -S localhost:8000 -t public;
+
+# Testing
+
+## You can see the results acessing this URL
+
+> localhost:8000?latitude=35.6534&longitude=139.74477&order-by=pricepernight
