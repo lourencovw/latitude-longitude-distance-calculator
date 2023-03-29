@@ -9,7 +9,9 @@
 
 ## Option 2 - Create your own local enviroment (PHP 8.2, Composer 2.5)
 
-### 2.1 - Run these commands
+### 2.1 - Copy env.example to .env file
+
+### 2.2 - Run these commands
 
     > composer install;    
     > php artisan migrate;
